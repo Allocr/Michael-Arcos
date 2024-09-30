@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Albertsthal;
+    src: url(../fonts/Albertsthal/Albertsthal\ Typewriter.ttf);
+}
+
+html{
+    max-width: 100%;
+    height: 100vh;
+    background-color: black;
+   }
+   
+   body{
+       display: flex;
+       flex-direction: row;
+       height: 100%;
+       width: 100%;
+       margin: 0;
+   }
+  
+   
+   header{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       display: flex;
+       flex-direction: row;
+    }
+
+   main{
+      width: 100%;
+      padding: 20px;
+      height: 100%;
+      padding-left: 80px;
+      display: flex;
+      flex-direction: column;
+      font-family: Albertsthal;
+   }
+
+  .Movies{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+   }
+
+   .Poster{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   }
+
+   .Movies img{
+    padding-top: 50px;
+   }
+
+   .oculus{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 15%;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+   }
+
+   .oculus ol {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       list-style-type: none;
+       flex-basis: 100%;
+       margin: 0;
+       padding: 0;
+       width: 100%;
+   }
+
+   .oculus ol li{
+    width: 100%;
+    position: relative;
+    display: flex;
+   }
+
+   .oculus ol li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   @media only screen and (max-width: 800px) {
+   main{
+       width: 100%;
+       padding: 0;
+   }
+   html{
+       font-size: 12px;
+   }
+
+   .oculus{
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+   }
+   .oculus ol{
+    flex-direction: row;
+   }
+
+   .Movies img{
+    width: 100%;
+   }
+   .Movies{
+    flex-wrap: wrap;
+   }
+   .Poster{
+    width: 50%;
+   }
+   }

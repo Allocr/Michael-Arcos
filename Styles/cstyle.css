@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Albertsthal;
+    src: url(../fonts/Albertsthal/Albertsthal\ Typewriter.ttf);
+}
+
+html{
+    max-width: 100%;
+    height: 100vh;
+    background-color: black;
+   }
+   
+   body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       height: 100%;
+       width: 100%;
+       margin: 0;
+   }
+
+   main{
+      width: 100%;
+      display: flex;
+      font-family: Albertsthal;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.1rem;
+      padding-top: 100px;
+      margin-left: -30px;
+      color: #cd080f;
+    }
+    
+    main a{
+        display: flex;
+        justify-content: center;
+    }
+
+    aside{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    }
+   
+   .fullContent{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-content: center;
+    flex-grow: 1;
+   }
+
+   .oculus{
+    width: 60%;
+   }
+
+   .oculus ol {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       list-style-type: none;
+       flex-basis: 100%;
+       width: 100%;
+       margin: 0;
+       padding: 10px;
+   }
+
+   .oculus ol li{
+    display: flex;
+    width: 35%;
+   }
+
+   .oculus ol li a{
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+   aside img{
+    width: 80%;
+   }
+
+   main p img{
+    width: 40%;
+   }
+
+   main p{
+    text-align: center; 
+    white-space-collapse: preserve;
+   }
+
+   @media only screen and (max-width: 800px) {
+    main{
+        padding: 0;
+        margin: 0;
+    }
+    .fullContent{
+        flex-direction: column-reverse;
+    }
+    aside{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    aside img{
+        width: 70%;
+        padding-bottom: 10px;
+    }
+    .oculus{
+        width: 100%;
+    }
+    main p img{
+        width: 80%;
+    }
+
+    main p{
+        padding: 10px;
+        white-space-collapse: collapse ;
+        line-height: 1.5rem;
+    }
+   }

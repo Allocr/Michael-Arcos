@@ -1,0 +1,105 @@
+html{
+    max-width: 100%;
+    height: 100vh;
+    background-color: black;
+   }
+   
+   body{
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       height:100%;
+       width:100%;
+       margin: 0; 
+   }
+   
+   aside{
+       width: 17.5%;
+   }
+
+   main{
+      height: 68%;
+      padding: 0;
+      background-image: url(../imgs/Diane.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 63.2%;
+   }
+   
+   .fullContent{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-content: center;
+    flex-grow: 1;
+   }
+
+   .noBorders{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .head img{
+    width: 45%; 
+    padding-top: 49px; 
+    padding-bottom: 14.5px;
+   }
+
+   .oculus{
+    width: 70%;
+    padding-top: 8.5px;
+   }
+
+   .oculus ol {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       list-style-type: none;
+       flex-basis: 100%;
+       width: 100%;
+       margin: 0;
+       padding: 10px;
+   }
+
+   .oculus ol li{
+    display: flex;
+    align-items: center;
+    width: 35%;
+   }
+
+   .oculus ol li a{
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+
+   @media only screen and (max-width: 800px) {
+    aside{
+        display: none;
+    }
+    .noBorders{
+        width: 100%;
+        justify-content: center;
+    }
+    .oculus{
+        width: 100%;
+        padding: 0;
+    }
+    main{
+        height: 40%;
+        width: 80%;
+    }
+    .head img{
+        width: 80%;
+    }
+
+   }
