@@ -42,6 +42,12 @@ body{
       font-family: Albertsthal;
    }
 
+   a :hover{
+    border-style: solid;
+    border-color: transparent;
+    border-width: 20px;
+   }
+
    .oculus{
     width: 10%;
     display: flex;

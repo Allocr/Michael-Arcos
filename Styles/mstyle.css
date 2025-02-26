@@ -54,6 +54,12 @@ html{
     width: 90%;
    }
 
+   .Poster a :hover{
+    border-style: solid;
+    border-color: transparent;
+    border-width: 10px;
+   }
+
    .oculus{
     width: 10%;
     display: flex;
